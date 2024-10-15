@@ -12,6 +12,21 @@ This repository provides a flexible and customizable `Pipeline` class that allow
 - Failure handling with `on_failure` for exceptions.
 - Ability to define and manage multiple pipelines using the `Hub` class.
 
+## Installation
+
+Ensure you have Python 3.11 or later installed. You can add this utility to your project using [Poetry](https://python-poetry.org/) or manually copy the provided files into your project.
+
+```bash
+# Clone the repository
+git clone https://github.com/PsyChaos/pipeline.git
+
+# Navigate to the directory
+cd tap
+
+# Install the dependencies using Poetry (if applicable)
+poetry install
+```
+
 ## Usage
 
 ### Basic Pipeline Usage
@@ -189,6 +204,16 @@ except ValueError as e:
 # Output 2: "Error: Pipeline 'non_existent_pipeline' not found"
 ```
 
+## Test
+
+Unit tests are provided using `pytest`. Run the following command to execute the tests:
+
+```bash
+pytest
+```
+
+Sample test cases are included to verify chaining, callback behavior, and error handling.
+
 ## Method Reference
 
 ### `Pipeline` Methods
@@ -210,3 +235,7 @@ except ValueError as e:
 ## Conclusion
 
 This pipeline system is highly customizable, and designed for flexibility. It allows you to organize complex workflows with ease, providing options for conditional logic, error handling, and managing multiple pipelines.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
